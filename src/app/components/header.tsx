@@ -21,7 +21,7 @@ export default function Header() {
 
     return (
         <div className={`fixed top-0 left-0 w-full h-20 md:h-28 z-50 bg-white flex items-center justify-between p-8 md:px-28 transition-shadow duration-300 ${scrolled ? "shadow-md border-b border-gray-200" : ""}`}>
-            <Image src="/logo.png" alt="logo" width={100} height={100} />
+            <Image src="/logo2.png" alt="logo" width={100} height={100} />
 
             <button
                 className="md:hidden flex flex-col justify-center items-center"
@@ -52,11 +52,19 @@ export default function Header() {
                 </Link>
 
                 <Link
+                    href="/servico"
+                    className={`text-black border-b-2 transition ${pathname === "/servico" ? "border-black" : "border-transparent hover:border-black"
+                        }`}
+                >
+                    Portfólio
+                </Link>
+
+                <Link
                     href="/sobre"
                     className={`text-black border-b-2 transition ${pathname === "/sobre" ? "border-black" : "border-transparent hover:border-black"
                         }`}
                 >
-                    Sobre
+                    Sobre Nós
                 </Link>
             </div>
 
