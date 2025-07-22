@@ -95,12 +95,21 @@ export default function Header() {
                         </Link>
 
                         <Link
+                            href="/portfolio"
+                            onClick={() => setOpen(false)}
+                            className={`text-black border-b-2 transition ${pathname === "/portfolio" ? "border-black" : "border-transparent hover:border-black"
+                                }`}
+                        >
+                            Portfólio
+                        </Link>
+
+                        <Link
                             href="/sobre"
                             onClick={() => setOpen(false)}
                             className={`text-black border-b-2 transition ${pathname === "/sobre" ? "border-black" : "border-transparent hover:border-black"
                                 }`}
                         >
-                            Sobre
+                            Sobre Nós
                         </Link>
                     </div>
 
