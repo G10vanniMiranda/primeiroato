@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,9 +12,16 @@ export default function Home() {
 
           <div className="w-1/2 h-full flex flex-col items-center justify-center text-center md:text-left gap-6 p-4">
 
-            <h1 className="text-3xl font-bold mt-20 text-center text-white">Transformando cliques em clientes.</h1>
+            <h1 className="text-4xl md:text-7xl font-bold mt-20 text-center text-white">Transformando cliques em clientes.</h1>
 
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-2xl">SAIBA MAIS</button>
+            <Link
+              href="https://wa.me/5569981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 px-5 md:px-10 py-3 md:py-4 text-xl md:text-3xl text-white rounded-3xl bg-blue-500 hover:bg-blue-600 transition duration-600 hover:scale-125 "
+            >
+              SAIBA MAIS
+            </Link>
 
           </div>
 

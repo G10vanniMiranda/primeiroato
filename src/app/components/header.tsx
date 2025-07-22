@@ -52,8 +52,8 @@ export default function Header() {
                 </Link>
 
                 <Link
-                    href="/servico"
-                    className={`text-black border-b-2 transition ${pathname === "/servico" ? "border-black" : "border-transparent hover:border-black"
+                    href="/portfolio"
+                    className={`text-black border-b-2 transition ${pathname === "/portfolio" ? "border-black" : "border-transparent hover:border-black"
                         }`}
                 >
                     Portfólio
