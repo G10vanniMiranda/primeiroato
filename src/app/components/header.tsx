@@ -20,24 +20,30 @@ export default function Header() {
     }, []);
 
     return (
-        <div className={`fixed top-0 left-0 w-full h-24 md:h-32 z-50 bg-white flex items-center justify-between p-8 md:px-28 transition-shadow duration-300 ${scrolled ? "shadow-md border-b border-gray-200" : ""}`}>
-            <Image src="/logo1.png" alt="logo" width={300} height={100} />
+        <div className={`fixed top-0 left-0 w-full h-24 md:h-32 z-50 bg-black flex items-center justify-between p-8 md:px-28 transition-shadow duration-300 ${scrolled ? "shadow-md border-b border-gray-200" : ""}`}>
+
+            <Image
+                src="/logo1.png"
+                alt="logo"
+                width={300} height={100}
+                className="w-36 md:w-52 h-auto object-contain"
+            />
 
             <button
                 className="md:hidden flex flex-col justify-center items-center"
                 onClick={() => setOpen(!open)}
                 aria-label="Abrir menu"
             >
-                <span className="block w-8 h-1 bg-black mb-1 rounded"></span>
-                <span className="block w-8 h-1 bg-black mb-1 rounded"></span>
-                <span className="block w-8 h-1 bg-black mb-1 rounded"></span>
+                <span className="block w-8 h-1 bg-blue-400 mb-1 rounded"></span>
+                <span className="block w-8 h-1 bg-blue-400 mb-1 rounded"></span>
+                <span className="block w-8 h-1 bg-blue-400 mb-1 rounded"></span>
 
             </button>
 
             <div className='hidden md:flex items-center gap-10'>
                 <Link
                     href="/"
-                    className={`text-black border-b-2 transition ${pathname === "/" ? "border-black" : "border-transparent hover:border-black"
+                    className={`text-blue-500 border-b-2 transition ${pathname === "/" ? "border-blue-500" : "border-transparent hover:border-blue-500"
                         }`}
                 >
                     Inicio
@@ -45,7 +51,7 @@ export default function Header() {
 
                 <Link
                     href="/servico"
-                    className={`text-black border-b-2 transition ${pathname === "/servico" ? "border-black" : "border-transparent hover:border-black"
+                    className={`text-blue-500 border-b-2 transition ${pathname === "/servico" ? "border-blue-500" : "border-transparent hover:border-blue-500"
                         }`}
                 >
                     Serviços
@@ -53,7 +59,7 @@ export default function Header() {
 
                 <Link
                     href="/portfolio"
-                    className={`text-black border-b-2 transition ${pathname === "/portfolio" ? "border-black" : "border-transparent hover:border-black"
+                    className={`text-blue-500 border-b-2 transition ${pathname === "/portfolio" ? "border-blue-500" : "border-transparent hover:border-blue-500"
                         }`}
                 >
                     Portfólio
@@ -61,7 +67,7 @@ export default function Header() {
 
                 <Link
                     href="/sobre"
-                    className={`text-black border-b-2 transition ${pathname === "/sobre" ? "border-black" : "border-transparent hover:border-black"
+                    className={`text-blue-500 border-b-2 transition ${pathname === "/sobre" ? "border-blue-500" : "border-transparent hover:border-blue-500"
                         }`}
                 >
                     Sobre Nós
@@ -79,7 +85,7 @@ export default function Header() {
                         <Link
                             href="/"
                             onClick={() => setOpen(false)}
-                            className={`text-black border-b-2 transition ${pathname === "/" ? "border-black" : "border-transparent hover:border-black"
+                            className={`text-blue-500 border-b-2 transition ${pathname === "/" ? "border-blue-500" : "border-transparent hover:border-blue-500"
                                 }`}
                         >
                             Inicio
@@ -88,7 +94,7 @@ export default function Header() {
                         <Link
                             href="/servico"
                             onClick={() => setOpen(false)}
-                            className={`text-black border-b-2 transition ${pathname === "/servico" ? "border-black" : "border-transparent hover:border-black"
+                            className={`text-blue-500 border-b-2 transition ${pathname === "/servico" ? "border-blue-500" : "border-transparent hover:border-blue-500"
                                 }`}
                         >
                             Serviços
@@ -97,7 +103,7 @@ export default function Header() {
                         <Link
                             href="/portfolio"
                             onClick={() => setOpen(false)}
-                            className={`text-black border-b-2 transition ${pathname === "/portfolio" ? "border-black" : "border-transparent hover:border-black"
+                            className={`text-blue-500 border-b-2 transition ${pathname === "/portfolio" ? "border-blue-500" : "border-transparent hover:border-blue-500"
                                 }`}
                         >
                             Portfólio
@@ -106,7 +112,7 @@ export default function Header() {
                         <Link
                             href="/sobre"
                             onClick={() => setOpen(false)}
-                            className={`text-black border-b-2 transition ${pathname === "/sobre" ? "border-black" : "border-transparent hover:border-black"
+                            className={`text-blue-500 border-b-2 transition ${pathname === "/sobre" ? "border-blue-500" : "border-transparent hover:border-blue-500"
                                 }`}
                         >
                             Sobre Nós
