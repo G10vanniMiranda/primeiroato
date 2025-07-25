@@ -9,7 +9,7 @@ export default function Home() {
     <div className='w-screen md:h-auto flex flex-col items-center justify-center bg-gray-100 mt-1'>
 
       {/* Section 1 */}
-      <section className="w-full h-auto mt-10 md:h-[690px] p-4 bg-[url(/mobile.png)] md:bg-[url(/tablet.png)] lg:bg-[url(/desktop.png)] bg-cover bg-center bg-no-repeat">
+      <section className="w-full h-auto mt-20 md:h-[690px] p-4 bg-[url(/mobile.png)] md:bg-[url(/tablet.png)] lg:bg-[url(/desktop.png)] bg-cover bg-center bg-no-repeat">
 
         <motion.div
           className="w-full h-full flex flex-col md:flex-row items-center justify-center"
@@ -70,25 +70,165 @@ export default function Home() {
       </section>
 
       {/* Section 2 */}
-      <section className="w-full h-auto p-4 bg-gray-200 flex flex-col items-center justify-center gap-8">
+      <section className="w-full h-auto p-4 bg-gray-200 flex flex-col md:flex-row items-center justify-center gap-8">
 
-        <motion.h2
-          className="text-3xl md:text-5xl font-bold text-gray-800"
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          O que fazemos?
-        </motion.h2>
+        <div className="flex flex-col gap-8 items-center justify-center">
 
-        <motion.p
-          className="text-lg md:text-xl text-gray-600 text-center max-w-2xl"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          <motion.h2
+            className="text-3xl md:text-5xl font-bold text-gray-800"
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Quem somos?
+          </motion.h2>
+
+          <motion.p
+            className="text-lg md:text-3xl text-gray-600 text-center max-w-2xl"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            A Primeiro Ato é uma agência de marketing digital especializada em posicionar marcas, gerar autoridade e entregar resultados reais.
+
+            Com uma abordagem estratégica, combinamos branding, tráfego pago, automações inteligentes e produção criativa para transformar negócios em referências digitais. Atuamos de forma consultiva, aliando performance e identidade visual com foco total em crescimento mensurável.
+          </motion.p>
+
+        </div>
+
+        <motion.div
+          animate={{ y: [0, -20, 0] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut"
+          }}
         >
-          Somos especialistas em transformar a presença digital da sua empresa, criando sites e landing pages que convertem visitantes em clientes.
-        </motion.p>
+          <Image src="/mascote1.png" alt="logo" width={600} height={100} />
+        </motion.div>
+
+      </section>
+
+      {/* Section 3 */}
+      <section className="w-full h-auto p-4 bg-blue-800 flex flex-col md:flex-row items-center justify-center gap-8 py-10">
+
+        <div className="flex flex-col items-center justify-center gap-6 text-center">
+
+          <motion.h2
+            className="text-3xl md:text-5xl font-bold text-white"
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            Nosso Diferencial
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mt-4 place-items-center">
+
+            <motion.div className="w-[350px] h-32 border border-white rounded-2xl flex items-center justify-center shadow-lg p-1">
+
+              <div className="w-80">
+                <Image src="/certo.png" alt="Diferencial 1" width={300} height={100} />
+              </div>
+
+              <div className="p-2 flex">
+                <p className="text-lg md:text-2xl text-white font-semibold mt-2">
+                  Posicionamento como
+                  Agência de Performance +
+                  Presença Local.
+                </p>
+              </div>
+
+            </motion.div>
+
+            <motion.div className="w-[350px] h-32 border border-white rounded-2xl flex items-center justify-center shadow-lg p-1">
+
+              <div className="w-80">
+                <Image src="/certo.png" alt="Diferencial 1" width={300} height={100} />
+              </div>
+
+              <div className="p-2 flex">
+                <p className="text-lg md:text-2xl text-white font-semibold mt-2">
+                  Abordagem centrada no
+                  cliente e orientada para
+                  soluções.
+                </p>
+              </div>
+
+            </motion.div>
+
+            <motion.div className="w-[350px] h-32 border border-white rounded-2xl flex items-center justify-center shadow-lg p-1">
+
+              <div className="w-80">
+                <Image src="/certo.png" alt="Diferencial 1" width={300} height={100} />
+              </div>
+
+              <div className="p-2 flex">
+                <p className="text-lg md:text-2xl text-white font-semibold mt-2">
+                  Foco na qualidade,
+                  confiabilidade e segurança.
+                </p>
+              </div>
+
+            </motion.div>
+
+            <motion.div className="w-[350px] h-32 border border-white rounded-2xl flex items-center justify-center shadow-lg p-1">
+
+              <div className="w-80">
+                <Image src="/certo.png" alt="Diferencial 1" width={300} height={100} />
+              </div>
+
+              <div className="p-2 flex">
+                <p className="text-lg md:text-2xl text-white font-semibold mt-2">
+                  Parceria estratégica e
+                  colaborativa com os
+                  clientes.
+                </p>
+              </div>
+
+            </motion.div>
+
+            <motion.div className="w-[350px] h-32 border border-white rounded-2xl flex items-center justify-center shadow-lg p-1">
+
+              <div className="w-80">
+                <Image src="/certo.png" alt="Diferencial 1" width={300} height={100} />
+              </div>
+
+              <div className="p-2 flex">
+                <p className="text-lg md:text-2xl text-white font-semibold mt-2">
+                  Montamos seu projeto de
+                  acordo com a sua
+                  necessidade.
+                </p>
+              </div>
+
+            </motion.div>
+
+            <motion.div className="w-[350px] h-32 border border-white rounded-2xl flex items-center justify-center shadow-lg p-1">
+
+              <div className="w-80">
+                <Image src="/certo.png" alt="Diferencial 1" width={300} height={100} />
+              </div>
+
+              <div className="p-2 flex">
+                <p className="text-lg md:text-2xl text-white font-semibold mt-2">
+                  Atenção ao longo prazo e
+                  suporte contínuo.
+                </p>
+              </div>
+
+            </motion.div>
+
+          </div>
+
+        </div>
+
+        <motion.div
+          className="flex flex-col gap-8 items-center justify-center"
+        >
+          <Image src="/mascote3.png" alt="logo" width={600} height={100} />
+        </motion.div>
 
       </section>
 
