@@ -232,13 +232,30 @@ export default function Home() {
 
       </section>
 
+      {/* Botão do WhatsApp */}
+      <div className="fixed bottom-10 right-10 z-50">
 
-      <div className="fixed bottom-10 right-10">
-        <Link href="https://wa.me/5569999210459" className=" flex items-center relative animate-pulse">
-          <p className="text-lg md:text-2xl text-white font-semibold bg-green-500 py-1 absolute right-[60px] w-48 px-3 rounded-l-full z-10 ">
+        <Link
+          href="https://wa.me/55699981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
+          className="flex items-center relative animate-pulse"
+          aria-label="Abrir conversa no WhatsApp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <p className="hidden md:block text-lg md:text-2xl text-white font-semibold bg-green-500 py-1 absolute right-[60px] w-48 px-3 rounded-l-full z-10">
             Contato rápido
           </p>
-          <Image src="/whatsApp2.webp" alt="WhatsApp" width={70} height={70} className="z-20 " />
+
+          <Image
+            src="/whatsApp2.webp"
+            alt="Ícone do WhatsApp"
+            width={70}
+            height={70}
+            className="z-20"
+            priority
+          />
+
         </Link>
       </div>
 
