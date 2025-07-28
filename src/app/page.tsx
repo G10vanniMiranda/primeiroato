@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className='w-screen md:h-auto flex flex-col items-center justify-center bg-gray-100 mt-1'>
+    <div className='w-screen md:h-auto flex flex-col items-center justify-center bg-gray-100 mt-1 relative'>
 
       {/* Section 1 */}
       <section className="w-full h-auto mt-20 md:h-[690px] p-4 bg-[url(/mobile.png)] md:bg-[url(/tablet.png)] lg:bg-[url(/desktop.png)] bg-cover bg-center bg-no-repeat">
@@ -231,6 +231,16 @@ export default function Home() {
         </motion.div>
 
       </section>
+
+
+      <div className="fixed bottom-10 right-10">
+        <Link href="https://wa.me/5569999210459" className=" flex items-center relative animate-pulse">
+          <p className="text-lg md:text-2xl text-white font-semibold bg-green-500 py-1 absolute right-[60px] w-48 px-3 rounded-l-full z-10 ">
+            Contato rápido
+          </p>
+          <Image src="/whatsApp2.webp" alt="WhatsApp" width={70} height={70} className="z-20 " />
+        </Link>
+      </div>
 
     </div>
   );
