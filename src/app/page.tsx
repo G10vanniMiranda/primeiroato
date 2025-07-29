@@ -232,11 +232,52 @@ export default function Home() {
 
       </section>
 
+      {/* Section 4 */}
+      <section className="w-full h-auto p-4 bg-gray-100 flex flex-col md:flex-row items-center justify-center gap-8 py-10 bg-[url(/mobile.png)] md:bg-[url(/tablet.png)] lg:bg-[url(/desktop.png)] bg-cover bg-center bg-no-repeat">
+
+        <div className="bg-red-400 w-full h-auto">
+
+          <h2 className="text-white text-4xl font-semibold text-center">Nossos Serviços</h2>
+
+        </div>
+
+        <div className="bg-amber-300 w-full h-auto flex flex-col md:flex-row items-center justify-center gap-4">
+
+          <div className="w-full md:w-1/3 p-4">
+
+            <Image src="/icon1.png" alt="Serviço 1" width={300} height={100} />
+
+            <p className="text-gray-700">Desenvolvimento deSites e Landing Pages</p>
+
+          </div>
+
+          <div className="w-full md:w-1/3 p-4">
+
+            <Image src="/icon2.png" alt="Serviço 2" width={300} height={100} />
+
+            <p className="text-gray-700">Tráfego Pago</p>
+
+          </div>
+
+          <div className="w-full md:w-1/3 p-4">
+
+            <Image src="/icon3.png" alt="Serviço 3" width={300} height={100} />
+
+            <p className="text-gray-700">Gravação de Conteúdos</p>
+
+          </div>
+
+        </div>
+
+        <div></div>
+
+      </section>
+
       {/* Botão do WhatsApp */}
       <div className="fixed bottom-10 right-10 z-50">
 
         <Link
-          href="https://wa.me/55699981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
+          href="https://wa.me/5569981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
           className="flex items-center relative animate-pulse"
           aria-label="Abrir conversa no WhatsApp"
           target="_blank"
