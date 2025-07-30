@@ -233,43 +233,113 @@ export default function Home() {
       </section>
 
       {/* Section 4 */}
-      <section className="w-full h-auto p-4 bg-gray-100 flex flex-col md:flex-row items-center justify-center gap-8 py-10 bg-[url(/mobile.png)] md:bg-[url(/tablet.png)] lg:bg-[url(/desktop.png)] bg-cover bg-center bg-no-repeat">
+      <section className="w-full h-auto p-4 bg-gray-100 flex flex-col items-center justify-center gap-8 py-10 bg-[url(/mobile.png)] md:bg-[url(/tablet.png)] lg:bg-[url(/desktop.png)] bg-cover bg-center bg-no-repeat">
 
-        <div className="bg-red-400 w-full h-auto">
+        <div className="w-full h-auto">
 
-          <h2 className="text-white text-4xl font-semibold text-center">Nossos Serviços</h2>
-
-        </div>
-
-        <div className="bg-amber-300 w-full h-auto flex flex-col md:flex-row items-center justify-center gap-4">
-
-          <div className="w-full md:w-1/3 p-4">
-
-            <Image src="/icon1.png" alt="Serviço 1" width={300} height={100} />
-
-            <p className="text-gray-700">Desenvolvimento deSites e Landing Pages</p>
-
-          </div>
-
-          <div className="w-full md:w-1/3 p-4">
-
-            <Image src="/icon2.png" alt="Serviço 2" width={300} height={100} />
-
-            <p className="text-gray-700">Tráfego Pago</p>
-
-          </div>
-
-          <div className="w-full md:w-1/3 p-4">
-
-            <Image src="/icon3.png" alt="Serviço 3" width={300} height={100} />
-
-            <p className="text-gray-700">Gravação de Conteúdos</p>
-
-          </div>
+          <motion.h2
+            className="text-white text-4xl font-bold text-center"
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: false }}
+          >
+            Nossos Serviços
+          </motion.h2>
 
         </div>
 
-        <div></div>
+        <div className="w-full md:w-[1000px] h-auto grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+
+          <motion.div
+            className="w-full border-2 border-gray-300 rounded-2xl shadow-md flex items-center"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: false }}
+            whileHover={{ scale: 1.04, boxShadow: "0 0 20px #22d3ee" }}
+          >
+            <Image className="mb-5" src="/icon01.png" alt="Serviço 1" width={120} height={100} />
+            <p className="text-white">Desenvolvimento de Sites e Landing Pages</p>
+          </motion.div>
+
+          <motion.div
+            className="w-full border-2 border-gray-300 rounded-2xl shadow-md flex items-center"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            viewport={{ once: false }}
+            whileHover={{ scale: 1.04, boxShadow: "0 0 20px #22d3ee" }}
+          >
+            <Image className="mb-5" src="/icon02.png" alt="Serviço 2" width={120} height={100} />
+            <p className="text-white">Tráfego Pago</p>
+          </motion.div>
+
+          <motion.div
+            className="w-full border-2 border-gray-300 rounded-2xl shadow-md flex items-center"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            viewport={{ once: false }}
+            whileHover={{ scale: 1.04, boxShadow: "0 0 20px #22d3ee" }}
+          >
+            <Image className="mb-5" src="/icon03.png" alt="Serviço 3" width={120} height={100} />
+            <p className="text-white">Gravação de Conteúdos</p>
+          </motion.div>
+
+          <motion.div
+            className="w-full border-2 border-gray-300 rounded-2xl shadow-md flex items-center"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            viewport={{ once: false }}
+            whileHover={{ scale: 1.04, boxShadow: "0 0 20px #22d3ee" }}
+          >
+            <Image className="mb-5" src="/icon04.png" alt="Serviço 4" width={120} height={100} />
+            <p className="text-white">Design Gráfico</p>
+          </motion.div>
+
+          <motion.div
+            className="w-full border-2 border-gray-300 rounded-2xl shadow-md flex items-center"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            viewport={{ once: false }}
+            whileHover={{ scale: 1.04, boxShadow: "0 0 20px #22d3ee" }}
+          >
+            <Image className="mb-5" src="/icon05.png" alt="Serviço 5" width={120} height={100} />
+            <p className="text-white">Gerenciamento de Redes</p>
+          </motion.div>
+
+          <motion.div
+            className="w-full border-2 border-gray-300 rounded-2xl shadow-md flex items-center"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            viewport={{ once: false }}
+            whileHover={{ scale: 1.04, boxShadow: "0 0 20px #22d3ee" }}
+          >
+            <Image className="mb-5" src="/icon06.png" alt="Serviço 6" width={120} height={100} />
+            <p className="text-white">Automação</p>
+          </motion.div>
+
+        </div>
+
+        <div className="w-full md:px-40 mt-4">
+
+          <motion.h1
+            className="text-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: false }}
+          >
+            "Se você pode sonhar, você pode realizar."
+            <br />
+            Walt Disney
+          </motion.h1>
+
+        </div>
 
       </section>
 
