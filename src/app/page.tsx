@@ -360,6 +360,29 @@ export default function Home() {
 
       </section>
 
+      {/* Section 5 */}
+      <section className="w-full h-auto p-4 bg-gray-200 flex flex-col md:flex-row items-center justify-center py-10">
+
+        <div className="bg-red-400 w-1/2 h-auto flex items-center justify-center">
+
+          <Image
+            src="/mascote4.png"
+            alt="logo"
+            width={600} height={100}
+          />
+
+        </div>
+
+        <div className="bg-blue-400 w-1/2 h-auto">
+
+          <h1>Por que investir no mercado digital?</h1>
+
+          <div></div>
+
+        </div>
+
+      </section>
+
       {/* Botão do WhatsApp */}
       <div className="fixed bottom-10 right-10 z-50">
 
