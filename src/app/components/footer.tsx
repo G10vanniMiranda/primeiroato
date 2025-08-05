@@ -43,7 +43,6 @@ export default function Footer() {
                     <div className='flex flex-col gap-2'>
                         <h2 className='text-white'>Telefone: +55 (69) 99325-7997</h2>
                         <h2 className='text-white'>Telefone: +55 (69) 98117-5481</h2>
-                        <h2 className='text-white'>Telefone: +55 (69) 99921-0459</h2>
                         <h2 className='text-white'>primeiroatodigital@gmail.com</h2>
                     </div>
 
