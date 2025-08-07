@@ -363,7 +363,7 @@ export default function Home() {
       {/* Section 5 */}
       <section className="w-full h-auto p-4 bg-gray-200 flex flex-col md:flex-row items-center justify-center py-10">
 
-        <div className="bg-red-400 w-1/2 h-auto flex items-center justify-center">
+        <div className="w-1/2 h-auto flex items-center justify-center">
 
           <Image
             src="/mascote4.png"
@@ -373,11 +373,29 @@ export default function Home() {
 
         </div>
 
-        <div className="bg-blue-400 w-1/2 h-auto">
+        <div className="bg-blue-400 w-96 md:w-1/2 h-auto flex flex-col items-center justify-center">
 
           <h1>Por que investir no mercado digital?</h1>
 
-          <div></div>
+          <div className="w-80 h-auto bg-blue-300">
+
+            <div className="flex">
+
+              <Image src="/icon07.png" alt="Ícone de crescimento" width={100} height={100} />
+
+              <div className="flex flex-col">
+                <h1>R$20b</h1>
+
+                <p>
+                  é o valor que o mercado
+                  digital vem faturando por
+                  ano no brasil.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
