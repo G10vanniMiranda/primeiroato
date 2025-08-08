@@ -250,7 +250,8 @@ export default function Home() {
       </section>
 
       {/* Section 4 */}
-      <section className="w-full h-auto p-4 bg-gray-100 flex flex-col items-center justify-center gap-8 py-10 bg-[url(/mobile.png)] md:bg-[url(/tablet.png)] lg:bg-[url(/desktop.png)] bg-cover bg-center bg-no-repeat">
+      <section className="w-full h-auto p-4 bg-gray-100 flex flex-col items-center justify-center gap-8 py-10 
+      bg-[url(/mobile.png)] md:bg-[url(/tablet.png)] lg:bg-[url(/desktop.png)] bg-cover bg-center bg-no-repeat">
 
         <div className="w-full h-auto">
 
@@ -351,7 +352,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: false }}
           >
-            "Se você pode sonhar, você pode realizar."
+            Se você pode sonhar, você pode realizar.
             <br />
             Walt Disney
           </motion.h1>
@@ -363,17 +364,17 @@ export default function Home() {
       {/* Section 5 */}
       <section className="w-full h-auto p-4 bg-gray-200 flex flex-col md:flex-row items-center justify-center py-10">
 
-        <div className="w-1/2 h-auto flex items-center justify-center">
+        <div className="w-full h-auto flex items-center justify-center">
 
           <Image
             src="/mascote4.png"
             alt="logo"
-            width={600} height={100}
+            width={1000} height={1000}
           />
 
         </div>
 
-        <div className="bg-blue-400 w-96 md:w-1/2 h-auto flex flex-col items-center justify-center">
+        <div className="w-96 md:w-1/2 font-bold text-2xl h-auto flex flex-col items-center justify-center">
 
           <h1>Por que investir no mercado digital?</h1>
 
@@ -381,9 +382,10 @@ export default function Home() {
 
             <div className="flex">
 
-              <Image src="/icon07.png" alt="Ícone de crescimento" width={100} height={100} />
+              <Image src="/cifrao.png" alt="Ícone do cifrao" width={100} height={100} />
 
               <div className="flex flex-col">
+
                 <h1>R$20b</h1>
 
                 <p>
@@ -391,6 +393,7 @@ export default function Home() {
                   digital vem faturando por
                   ano no brasil.
                 </p>
+
               </div>
 
             </div>
