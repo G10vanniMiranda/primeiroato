@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
+import { BiPlusCircle } from "react-icons/bi";
 
 export default function Home() {
   return (
@@ -364,31 +365,68 @@ export default function Home() {
       {/* Section 5 */}
       <section className="w-full h-auto p-4 bg-gray-200 flex flex-col md:flex-row items-center justify-center py-10">
 
-        <div className="w-full h-auto flex items-center justify-center">
+        <div className="w-full h-auto flex md:flex-1 items-center justify-center">
 
           <Image
             src="/mascote4.png"
             alt="logo"
             width={1000} height={1000}
+            className="max-w-[600px] w-full h-auto object-cover"
           />
 
         </div>
 
-        <div className="w-96 md:w-1/2 font-bold text-2xl h-auto flex flex-col items-center justify-center">
+        <div className="w-full md:flex-1 font-bold text-2xl h-auto flex flex-col items-center justify-center gap-3">
 
-          <h1>Por que investir no mercado digital?</h1>
+          <h1 className="text-center">Por que investir no mercado digital?</h1>
 
-          <div className="w-80 h-auto bg-blue-300">
+          <div className="w-full flex flex-col gap-3 p-3 bg-green-500/45 rounded-xl h-auto">
 
-            <div className="flex">
+            <div className="flex gap-2 justify-space-between items-center">
 
-              <Image src="/cifrao.png" alt="Ícone do cifrao" width={100} height={100} />
+              <Image src="/cifrao.png" alt="Ícone do cifrao" width={100} height={100} className="w-20 " />
 
-              <div className="flex flex-col">
+              <div className="w-full flex flex-col ">
 
-                <h1>R$20b</h1>
+                <h1 className="text-2xl">R$20b</h1>
 
-                <p>
+                <p className="text-sm font-light">
+                  é o valor que o mercado
+                  digital vem faturando por
+                  ano no brasil.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="flex gap-2 justify-space-between items-center">
+
+              <Image src="/cifrao.png" alt="Ícone do cifrao" width={100} height={100} className="w-20 " />
+
+              <div className="w-full flex flex-col ">
+
+                <h1 className="text-2xl">R$20b</h1>
+
+                <p className="text-sm font-light">
+                  é o valor que o mercado
+                  digital vem faturando por
+                  ano no brasil.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="flex gap-2 justify-space-between items-center">
+
+              <Image src="/cifrao.png" alt="Ícone do cifrao" width={100} height={100} className="w-20 " />
+
+              <div className="w-full flex flex-col ">
+
+                <h1 className="text-2xl">R$20b</h1>
+
+                <p className="text-sm font-light">
                   é o valor que o mercado
                   digital vem faturando por
                   ano no brasil.
@@ -404,8 +442,35 @@ export default function Home() {
 
       </section>
 
+      {/* Section 6 */}
+      <section className="w-full h-auto p-4 bg-black flex flex-col items-center justify-center gap-8 py-10">
+
+        <h1 className="uppercase font-bold text-3xl text-white">planos</h1>
+
+        <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center border-2 border-white rounded-2xl p-2">
+
+          <ul className="flex justify-center flex-col text-white">
+            <li className="flex gap-1 justify-center"> <BiPlusCircle color="green" size={20} className="" /> <span> 04 Artes gráficas personalizadas. </span>  </li>
+            <li className="flex gap-1 justify-center"> <BiPlusCircle color="green" size={20} className="" /> <span> 01 vídeo curto com roteiro incluído. </span>  </li>
+            <li className="flex gap-1 justify-center"> <BiPlusCircle color="green" size={20} className="" /> <span> 01 Landing Page Inicial</span>  </li>
+            <li className="flex gap-1 justify-center"> <BiPlusCircle color="green" size={20} className="" /> <span> 01 Setup de Campanha </span>  </li>
+          </ul>
+
+          <h2>R$ 1.000,00</h2>
+
+          <p className="text-white">Compromisso minimo: 3</p>
+          <p className="text-white">meses de contrato</p>
+
+          <button className="bg-transparent border-2 border-white animate-pulse text-white px-4 py-2 rounded-full mt-4 tracking-wider">
+            Saiba mais
+          </button>
+
+        </div>
+
+      </section >
+
       {/* Botão do WhatsApp */}
-      <div className="fixed bottom-10 right-10 z-50">
+      < div className="fixed bottom-10 right-10 z-50" >
 
         <Link
           href="https://wa.me/5569981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
@@ -429,8 +494,8 @@ export default function Home() {
           />
 
         </Link>
-      </div>
+      </div >
 
-    </div>
+    </div >
   );
 }
