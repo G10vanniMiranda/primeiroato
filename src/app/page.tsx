@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { BiPlusCircle } from "react-icons/bi";
+import { GoChevronRight } from "react-icons/go";
 
 export default function Home() {
   return (
@@ -402,16 +403,17 @@ export default function Home() {
 
             <div className="flex gap-2 justify-space-between items-center">
 
-              <Image src="/cifrao.png" alt="Ícone do cifrao" width={100} height={100} className="w-20 " />
+              <Image src="/grafico.png" alt="Ícone do gráfico" width={100} height={100} className="w-20 " />
 
               <div className="w-full flex flex-col ">
 
-                <h1 className="text-2xl">R$20b</h1>
+                <h1 className="text-2xl">85%</h1>
 
                 <p className="text-sm font-light">
-                  é o valor que o mercado
-                  digital vem faturando por
-                  ano no brasil.
+                  Das empresas brasileiras, já
+                  investem em algum canal
+                  digital (site, redes sociais,
+                  tráfego pago, etc.).
                 </p>
 
               </div>
@@ -420,16 +422,19 @@ export default function Home() {
 
             <div className="flex gap-2 justify-space-between items-center">
 
-              <Image src="/cifrao.png" alt="Ícone do cifrao" width={100} height={100} className="w-20 " />
+              <Image src="/mapa.png" alt="Ícone do cifrao" width={100} height={100} className="w-20 " />
 
               <div className="w-full flex flex-col ">
 
-                <h1 className="text-2xl">R$20b</h1>
+                <h1 className="text-2xl">
+                  + de <br />
+                  84%
+                </h1>
 
                 <p className="text-sm font-light">
-                  é o valor que o mercado
-                  digital vem faturando por
-                  ano no brasil.
+                  da população brasileira
+                  está conectada à
+                  internet.
                 </p>
 
               </div>
@@ -447,27 +452,160 @@ export default function Home() {
 
         <h1 className="uppercase font-bold text-3xl text-white">planos</h1>
 
-        <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center border-2 border-white rounded-2xl p-2">
+        {/* Card Plano 1 */}
+        <div className="w-full h-80 flex flex-col md:flex-row items-center justify-center gap-2 border-b-2 border-r-2 border-b-gray-500 border-r-gray-500 rounded-2xl p-2">
 
           <ul className="flex justify-center flex-col text-white">
-            <li className="flex gap-1 justify-center"> <BiPlusCircle color="green" size={20} className="" /> <span> 04 Artes gráficas personalizadas. </span>  </li>
-            <li className="flex gap-1 justify-center"> <BiPlusCircle color="green" size={20} className="" /> <span> 01 vídeo curto com roteiro incluído. </span>  </li>
-            <li className="flex gap-1 justify-center"> <BiPlusCircle color="green" size={20} className="" /> <span> 01 Landing Page Inicial</span>  </li>
-            <li className="flex gap-1 justify-center"> <BiPlusCircle color="green" size={20} className="" /> <span> 01 Setup de Campanha </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 04 Artes gráficas personalizadas. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 vídeo curto com roteiro incluído. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Landing Page Inicial</span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Setup de Campanha </span>  </li>
           </ul>
 
-          <h2>R$ 1.000,00</h2>
+          <h2 className="text-gray-400 text-xl font-bold">R$ 1.000,00</h2>
 
-          <p className="text-white">Compromisso minimo: 3</p>
-          <p className="text-white">meses de contrato</p>
+          <div className="text-white flex flex-col items-center font-semibold">
+            <p>Compromisso minimo: 3</p>
+            <p>meses de contrato</p>
+          </div>
 
-          <button className="bg-transparent border-2 border-white animate-pulse text-white px-4 py-2 rounded-full mt-4 tracking-wider">
-            Saiba mais
-          </button>
+          <Link
+            href="https://wa.me/5569981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-transparent border-2 border-gray-400 animate-pulse text-white px-4 py-2 rounded-full mt-4 tracking-wider"
+          >
+            SAIBA MAIS
+          </Link>
+
+        </div>
+
+        {/* Card Plano 2 */}
+        <div className="w-full h-80 flex flex-col md:flex-row items-center justify-center gap-2 border-b-2 border-r-2 border-b-red-500 border-r-red-500 rounded-2xl p-2">
+
+          <ul className="flex justify-center flex-col text-white">
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 06 Artes gráficas personalizadas. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 03 vídeos curtos com roteiro incluído. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Landing Page Inicial</span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Setup de Campanha </span>  </li>
+          </ul>
+
+          <h2 className="text-red-400 text-xl font-bold">R$ 2.000,00</h2>
+
+          <div className="text-white flex flex-col items-center font-semibold">
+            <p>Compromisso minimo: 3</p>
+            <p>meses de contrato</p>
+          </div>
+
+          <Link
+            href="https://wa.me/5569981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-transparent border-2 border-red-400 animate-pulse text-white px-4 py-2 rounded-full mt-4 tracking-wider"
+          >
+            SAIBA MAIS
+          </Link>
+
+        </div>
+
+        {/* Card Plano 3 */}
+        <div className="w-full h-80 flex flex-col md:flex-row items-center justify-center gap-2 border-b-2 border-r-2 border-b-yellow-500 border-r-yellow-500 rounded-2xl p-2">
+
+          <ul className="flex justify-center flex-col text-white">
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 08 Artes gráficas personalizadas. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 04 vídeos curtos com roteiro incluído. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Landing Page Inicial</span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Setup de Campanha </span>  </li>
+          </ul>
+
+          <h2 className="text-yellow-400 text-xl font-bold">R$ 2.500,00</h2>
+
+          <div className="text-white flex flex-col items-center font-semibold">
+            <p>Compromisso minimo: 3</p>
+            <p>meses de contrato</p>
+          </div>
+
+          <Link
+            href="https://wa.me/5569981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-transparent border-2 border-yellow-400 animate-pulse text-white px-4 py-2 rounded-full mt-4 tracking-wider"
+          >
+            SAIBA MAIS
+          </Link>
+
+        </div>
+
+        {/* Card Plano 4 */}
+        <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center gap-2 border-b-2 border-r-2 border-b-purple-500 border-r-purple-500 rounded-2xl p-2">
+
+          <ul className="flex justify-center flex-col text-white">
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 13 Artes gráficas personalizadas. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 06 vídeos curtos com roteiros incluídos. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Landing Page Inicial. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Setup de Campanha. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> Gestão de Tráfego Pago. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Site Profissional. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> Campanhas mensais otimizadas. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> Integrações com WhatsApp ou <br /> Email Marketing. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> Consultoria estratégica Quinzenal. </span>  </li>
+          </ul>
+
+          <h2 className="text-fuchsia-500 text-xl font-bold">R$ 3.500,00</h2>
+
+          <div className="text-white flex flex-col items-center font-semibold">
+            <p>Compromisso minimo: 3</p>
+            <p>meses de contrato</p>
+          </div>
+
+          <Link
+            href="https://wa.me/5569981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-transparent border-2 border-purple-400 animate-pulse text-white px-4 py-2 rounded-full mt-4 tracking-wider"
+          >
+            SAIBA MAIS
+          </Link>
+
+        </div>
+
+        {/* Card Plano 5 */}
+        <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center gap-2 border-b-2 border-r-2 border-b-green-500 border-r-green-500 rounded-2xl p-2">
+
+          <ul className="flex justify-center flex-col text-white">
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 20 Artes gráficas personalizadas. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 08 vídeos curtos com roteiros incluídos. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 03 Landing Page Inicial. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Setup de Campanha. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> Gestão de Tráfego Pago. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> 01 Site Profissional. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> Campanhas mensais otimizadas. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> Integrações com WhatsApp ou <br /> Email Marketing. </span>  </li>
+            <li className="flex gap-1 justify-center"> <GoChevronRight color="green" size={20} className="" /> <span> Consultoria estratégica Quinzenal. </span>  </li>
+          </ul>
+
+          <h2 className="text-green-400 text-xl font-bold">R$ 6.000,00</h2>
+
+          <div className="text-white flex flex-col items-center font-semibold">
+            <p>Compromisso minimo: 3</p>
+            <p>meses de contrato</p>
+          </div>
+
+          <Link
+            href="https://wa.me/5569981175481?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-transparent border-2 border-green-500 animate-pulse text-white px-4 py-2 rounded-full mt-4 tracking-wider"
+          >
+            SAIBA MAIS
+          </Link>
 
         </div>
 
       </section >
+
+      {/* Section 6 */}
+      <section></section>
 
       {/* Botão do WhatsApp */}
       < div className="fixed bottom-10 right-10 z-50" >
