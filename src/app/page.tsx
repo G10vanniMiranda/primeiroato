@@ -638,6 +638,20 @@ export default function Home() {
       {/* Section 7 */}
       <section className="w-full h-auto p-4 bg-gray-200 flex flex-col items-center justify-center gap-8 py-10">
 
+        <div className="w-96 h-auto bg-amber-200 flex flex-col items-center justify-center gap-6">
+
+          <h1 className="text-2xl font-bold">Projetos de sucesso</h1>
+
+          <p className="">
+            * Empresas que adotam o marketing digital de forma estratégica estão acelerando o crescimento, reduzindo custos comerciais e aumentando a previsibilidade de vendas.
+            <br />
+            * Quem entra com estratégia, colhe crescimento de verdade.
+            <br />
+            * O digital não é gasto — é investimento com retorno comprovado.
+          </p>
+
+        </div>
+
       </section>
 
       {/* Botão do WhatsApp */}
