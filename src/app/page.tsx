@@ -1,5 +1,6 @@
 'use client';
 
+import { Carousel, CarouselItem } from "@/components/ui/carousel";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -650,6 +651,47 @@ export default function Home() {
             * O digital não é gasto — é investimento com retorno comprovado.
           </p>
 
+        </div>
+
+        <div className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto h-auto bg-red-300 flex items-center justify-center p-2 rounded-xl">
+          <Carousel>
+            <CarouselItem>
+              <Image
+                src="/logo_bio.png"
+                alt="Projeto 1"
+                width={400}
+                height={300}
+                className="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-lg"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/logo_ibe.png"
+                alt="Projeto 2"
+                width={400}
+                height={300}
+                className="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-lg"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/logo_mn.png"
+                alt="Projeto 3"
+                width={400}
+                height={300}
+                className="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-lg"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/logo_ss.png"
+                alt="Projeto 4"
+                width={400}
+                height={300}
+                className="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-lg"
+              />
+            </CarouselItem>
+          </Carousel>
         </div>
 
       </section>
