@@ -721,6 +721,31 @@ export default function Home() {
 
       </section>
 
+      {/* Section 8 */}
+      <section className="w-full h-auto p-4 bg-gradient-to-r from-black to-blue-500 flex flex-col items-center justify-center py-10">
+
+        <div className="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl h-96 rounded-2xl overflow-hidden flex flex-col items-center justify-center gap-4 mx-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.2329794711018!2d-63.90543262543011!3d-8.764137589494371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92325cdc64094d13%3A0x822b4ed30b13aad5!2sR.%20Gon%C3%A7alves%20Dias%2C%20110%20-%20Centro%2C%20Porto%20Velho%20-%20RO%2C%2076801-076!5e0!3m2!1spt-BR!2sbr!4v1756251880679!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="100%"
+            style={{ border: 0, borderRadius: "1rem" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <div className="text-white">
+            <h1 className="text-center font-semibold text-xl">
+              R. Gonçalves Dias - 110 - Centro Porto Velho - RO
+            </h1>
+          </div>
+        </div>
+
+        <div></div>
+
+      </section>
+
       {/* Botão do WhatsApp */}
       < div className="fixed bottom-10 right-10 z-50" >
 
