@@ -30,7 +30,7 @@ export default function Home() {
           >
 
             <motion.h1
-              className="text-4xl md:text-7xl font-bold mt-20 text-center text-white"
+              className="text-4xl sm:text-2xl md:text-4xl xl:text-7xl font-bold mt-20 text-center text-white"
               initial={{ opacity: 0, y: -40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
