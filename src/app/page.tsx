@@ -710,7 +710,7 @@ export default function Home() {
         <div>
 
           <Image
-            src="/logo_bio.png"
+            src="/mascote5.png"
             alt="Projeto 1"
             width={400}
             height={300}
@@ -742,7 +742,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div></div>
+        <div className="">
+
+        </div>
 
       </section>
 
